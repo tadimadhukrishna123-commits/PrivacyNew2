@@ -33,6 +33,6 @@ public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
 
     Activity activity = this.cordova.getActivity();
-    activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);
+    activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
 }
 }
